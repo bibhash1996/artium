@@ -1,7 +1,38 @@
 import { Typography, makeStyles, Grid } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { Movie } from "./types";
+
+export interface Movie {
+  Title: string;
+  Year: string;
+  Rated: string;
+  Released: string;
+  Runtime: string;
+  Genre: string;
+  Director: string;
+  Writer: string;
+  Actors: string;
+  Plot: string;
+  Language: string;
+  Country: string;
+  Awards: string;
+  Poster: string;
+  Ratings: RatingsEntity[];
+  Metascore: string;
+  imdbRating: string;
+  imdbVotes: string;
+  imdbID: string;
+  Type: string;
+  DVD: string;
+  BoxOffice: string;
+  Production: string;
+  Website: string;
+  Response: string;
+}
+export interface RatingsEntity {
+  Source: string;
+  Value: string;
+}
 
 const useStyles = makeStyles(() => ({
   root: {

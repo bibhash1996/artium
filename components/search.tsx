@@ -79,7 +79,7 @@ export default function Search(props: {
 
   useEffect(() => {
     setInput(props.value);
-  }, []);
+  }, [props.value]);
 
   return (
     <TextField
