@@ -34,7 +34,7 @@ export default function Index() {
     console.log("Search");
     setQuery(query);
     const response = await fetch(
-      `http://www.omdbapi.com/?apikey=b9bd48a6&s={${query}}&page=${page}`
+      `https://www.omdbapi.com/?apikey=b9bd48a6&s={${query}}&page=${page}`
     );
     const data: Entities = await response.json();
     console.log(data);
